@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cart.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body class="body-center">
+    <div class="container">
+      {{#if plan}}
+        <section class="summary">
+          <div class="summary-flex">
+            <div class="summary-pricing">
+              <h2>Web Hosting: {{plan.planName}}</h2>
+              <div
+                class="summary-card-flex"
+                id="card-list"
+                onclick="toggle(event)"
+              >
+                <div class="summary-card">
+                  <p><span>1</span> month</p>
+                  <h3><span>$</span><span>20.99</span></h3>
+                  <h4>/month</h4>
+                </div>
+                <div class="summary-card">
+                  <p><span>12</span> months</p>
+                  <h3><span>$</span><span>13.29</span></h3>
+                  <h4>/month</h4>
+
+                </div>
+                <div class="summary-card">
+                  <p><span>24</span> months</p>
+                  <h3><span>$</span><span>12.59</span></h3>
+                  <h4>/month</h4>
+
+                </div>
+                <div class="summary-card active">
+                  <p><span>36</span> months</p>
+                  <h3><span>$</span><span>{{plan.price}}</span></h3>
+                  <h4>/month</h4>
+
+                </div>
+              </div>
+            </div>
+            <div class="summary-order">
+              <h2>Order Summary</h2>
+              <div class="order-card">
+                <div class="order-card-flex">
+                  <div class="order-card-name">
+                    <h5>{{plan.planName}}</h5>
+                    <h6><span id="checkout-months">36</span> months</h6>
+                  </div>
+                  <div class="order-card-price">
+                    <h5>$<span id="pkg">611.64</span></h5>
+                  </div>
+                </div>
+
+                <div class="order-card-flex">
+                  <div class="order-card-name">
+                    <h5 class="promo">Promo: WBENT</h5>
+                  </div>
+                  <div class="order-card-price">
+                    <h5 class="red-price">-$<span id="promo">15</span></h5>
+                  </div>
+                </div>
+
+                <div class="order-card-flex">
+                  <div class="order-card-name">
+                    <h5>Total</h5>
+                  </div>
+                  <div class="order-card-price">
+                    <h5 class="total-price">$<span id="total">428.15</span></h5>
+                  </div>
+                </div>
+                <hr />
+                <small>All prices are in CAD</small>
+                <a href="/checkout/{{plan.planName}}" class="checkout">Checkout
+                  Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      {{else}}
+        <h1 class="message">{{message}}</h1>
+      {{/if}}
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

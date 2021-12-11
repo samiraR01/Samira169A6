@@ -1,0 +1,201 @@
+<!--
+ -- Student Name: Samira Roostaei
+ -- ID: 133107169
+ -- Email: sroostaei@myseneca.ca
+ -- Assignment 2 WEB322
+ --Date: 2021-10-02
+ Professor: Haytham Qushtom
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Hosting Canada</title>
+
+    <link rel="stylesheet" href="styleSheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <meta
+      property="og:description"
+      content="Web Hosting Canada offers Powerful Canadian Web Hosting Plans including Free Domain, Site Builder, Wordpress, Email &amp; 24/7 support. Start now!"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="height: 70px">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand">Canadian Domain</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/cwh">CWH</a></li>
+            <li><a href="https://whc.ca/en">Hosting & Servers</a></li>
+            <li><a href="https://whc.ca/en">Domain Names</a></li>
+            <li><a href="https://whc.ca/en">Websites</a></li>
+            <li><a href="https://whc.ca/en">Email</a></li>
+            <li><a href="https://whc.ca/en">Online Marketing</a></li>
+            <li><a href="/login">Log In</a></li>
+            <li><a href="/registration">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" style="margin-top: 60px;">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Add Plan Package</h2>
+
+          <br />
+
+          <form method="post" action="/plans/add" enctype="multipart/form-data">
+            <fieldset>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="planName">Plan Name:</label>
+                    <input
+                      class="form-control"
+                      id="planName"
+                      name="planName"
+                      type="text"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input
+                      class="form-control"
+                      id="price"
+                      name="price"
+                      type="text"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input
+                      class="form-control"
+                      id="description"
+                      name="description"
+                      type="text"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <legend>List of Features</legend>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="feature1">Feature 1:</label>
+                    <input
+                      class="form-control"
+                      id="feature1"
+                      name="feature1"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="feature2">Feature 2:</label>
+                    <input
+                      class="form-control"
+                      id="feature2"
+                      name="feature2"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="feature3">Feature 3:</label>
+                    <input
+                      class="form-control"
+                      id="feature3"
+                      name="feature3"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="feature4">Feature 4:</label>
+                    <input
+                      class="form-control"
+                      id="feature4"
+                      name="feature4"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="isPopular">Most Popular:</label>
+                    <input
+                      class="form-control"
+                      id="isPopular"
+                      name="isPopular"
+                      type="checkbox"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="image">Image:</label>
+                  <input
+                    class="form-control"
+                    id="image"
+                    name="image"
+                    type="file"
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <input
+              type="submit"
+              class="btn btn-primary pull-right"
+              value="Add Plan"
+            /><br /><br /><br />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

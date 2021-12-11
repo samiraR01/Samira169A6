@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.25;
+  background: #f1e1b2;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Summary-Section */
+
+.summary {
+  background: #fafafafa;
+  padding: 3.5rem 2.5rem;
+  border-radius: 0.5rem;
+  overflow-x: hidden;
+}
+
+.summary-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-pricing {
+  width: 60%;
+}
+
+.summary-pricing h2 {
+  font-size: 3.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.summary-card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.summary-card {
+  padding: 2rem;
+  width: 27rem;
+  height: 20rem;
+  border: 2px solid #eee;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.summary-card.active {
+  border: 2px solid rgb(9, 13, 236);
+}
+.summary-card > p {
+  color: #777;
+  padding-bottom: 0.5rem;
+}
+
+.summary-card h3 {
+  font-size: 2.4rem;
+}
+
+.summary-card h4 {
+  font-size: 1.8rem;
+}
+
+.save-off {
+  width: fit-content;
+  margin: 0.85rem auto;
+  background: coral;
+  padding: 0.85rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.new-price {
+  font-size: 1.3rem;
+  color: #777;
+}
+
+.summary-order {
+  width: 35%;
+}
+
+.summary-order h2 {
+  font-size: 3.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.order-card {
+  padding: 2.5rem;
+  border: 3px solid #eee;
+  border-radius: 0.5rem;
+}
+
+.order-card-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.order-card-name h5 {
+  font-size: 2rem;
+}
+
+.order-card-name h6 {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.order-card-price h5 {
+  font-size: 2rem;
+  color: #777;
+}
+
+.order-card-price .red-price {
+  color: red;
+}
+
+.order-card-price .total-price {
+  color: green;
+}
+
+.order-card-name .promo {
+  color: #ada9a9;
+}
+
+.summary-order small {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  color: #777;
+}
+
+.checkout {
+  display: block;
+  width: 13rem;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1.2rem 0.85rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
+  background: rgb(62, 111, 202);
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.body-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.message {
+  background-color: #d8d1d1;
+  padding: 5rem;
+}
+@media (max-width: 1010px) {
+  .summary-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .summary-order {
+    margin-top: 3.5rem;
+    width: 100%;
+  }
+
+  .summary-pricing {
+    width: 100%;
+  }
+}

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: ltr;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+}
+div#powerful-solutions.contain {
+  margin: 0px 23px;
+  padding: 60px 0px;
+}
+.col-sm-12 col-md-6 col-lg-3 {
+  margin: 0px 0px 20px;
+  padding: 0px 15px;
+}
+
+.col-sm-12 {
+  padding: 30px 10px;
+}
+
+.btn {
+  margin: 20px 0px 10px;
+  padding: 6px 12px;
+}
+
+.sale {
+  margin: 0px 20px;
+  padding: 6px 32px;
+  color: black;
+  background-color: rgb(240, 179, 49);
+  border-radius: 5px;
+}
+.addPlan-btn {
+  padding: 0.4rem 0.2rem;
+  background-color: palevioletred;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fafafa;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  display: block;
+  width: 220px;
+}
+
+@media screen and (max-width: 800px) {
+  .col-sm-12 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .col-sm-3 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.left {
+  position: absolute;
+  left: 115px;
+  top: 108px;
+  color: white;
+  font-size: 45px;
+}
+
+.btn {
+  padding-top: 229px;
+}
+
+.right {
+  position: absolute;
+  left: 936px;
+  top: 106px;
+  font-family: FuraCode Nerd Font, -apple-system, "system-ui",
+    BlinkMacSystemFont;
+  font-weight: 400;
+  color: white;
+  font-size: 45px;
+}
+.col-md-2 col-sm-4 col-xs-12 {
+  font-size: 16px;
+  padding: 0px 15px;
+}
+
+.col-md-2 col-sm-4 col-xs-12 ul > li {
+  margin: 0px 0px 10px;
+}
+
+.col-md-2 col-sm-4 col-xs-12 ul li a {
+  font-size: 13px;
+  padding: 0px 0px 5px;
+}
+
+.col-md-12 {
+  margin: 10px 0px 0px;
+  padding: 20px 15px 0px;
+  font-size: 16px;
+}
+
+.container-fluid2 {
+  height: 880px;
+  background-color: cadetblue;
+  margin-top: 70px;
+}
+
+.btn2 {
+  height: 50px;
+  width: 250px;
+}
+
+.container-fluid3 {
+  background-color: #e2dcdc;
+  height: auto;
+  margin-top: -50px;
+}
+
+.col-xs-6 {
+  background-color: #e2dcdc;
+  height: 700px;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+/* Dashboard */
+.dashboard {
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+.dashboard h2 {
+  color: #fafafa;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dashboard p {
+  color: #fafafa;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.dashboard .user-info > p {
+  font-size: 1.6rem;
+  color: palevioletred;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.dashboard .title {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+.dashboard .title .addPlan-btn {
+  margin-top: 0;
+}
+
+.dashboard .user-info {
+  margin: 5rem 2rem;
+  padding: 2rem;
+  border: 1.5px solid #eee;
+}
